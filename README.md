@@ -1,3 +1,5 @@
+Hello folks,this is a simple ecommerce frontend developed with React alongside some css libraries including AntD and Bootstrap.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
