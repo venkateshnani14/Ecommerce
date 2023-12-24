@@ -1,0 +1,91 @@
+{
+    "Headphones":[{
+        "name":"sennheiser_cx180s",
+        "type":"headphones",
+        "title":"Sennheiser CX180s",
+        "description":"The new sennheiser cx180s comes with a dual driver mode of size 9.2mm along with a microphone for calls.",
+        "img":"../img/headphones/cx180.jpg"
+    },
+    {
+        "name":"sonymdr",
+        "type":"headphones",
+        "title":"Sony MDR",
+        "description":"Sony MDR wired earphones come with an ultralight weight body and outperforming sound quality as always.Inbuilt microphone for calls along with a 3.5mm titanium coated jack.",
+        "img":"../img/headphones/mdr.jpg"
+    },
+    {
+        "name":"kzedxpro",
+        "type":"headphones",
+        "title":"KZ-EDX PRO",
+        "description":"CONCEPT KART KZ EDX 1DD Composite Magnetic Dynamic Driver HiFi in-Ear Wired Earphone IEM with Detachable 0.75mm 2 Pin Cable with mic (Black, 10mm ).",
+        "img":"../img/headphones/kzedxpro.png"
+    },
+    {
+        "name":"boultaudioloop",
+        "type":"headphones",
+        "title":"Boult Audio Loop",
+        "description":"Boult Audio Bassbuds Loop 2 Wired in Ear Earphones with Mic, 10mm Powerful Driver for Extra Bass with Customizable Ear Loop (Black).",
+        "img":"../img/headphones/boultaudioloop.png"
+    },
+    {
+        "name":"boatbassheads225",
+        "type":"headphones",
+        "title":"Boat Bassheads 225",
+        "description":"Despite the metal construction, Boat BassHeads 225 are very lightweight & comes with a microphone & L-Shaped 3.5 mm audio jack which is again made up of metal.",
+        "img":"../img/headphones/boat225.jpg"
+    },
+    {
+        "name":"skullcandy",
+        "type":"headphones",
+        "title":"SkullCandy JIB",
+        "description":"Skullcandy Jib Wired Headphones deliver immersive audio with enhanced bass, featuring a lightweight and ergonomic design for comfortable wear. Equipped with in-line controls, an adjustable cable, and universal compatibility, they offer a convenient and stylish audio experience.",
+        "img":"../img/headphones/skullcandyjib.jpg"
+    }
+
+    
+],
+"Mobiles":[
+    {
+        "name":"oneplus9r",
+        "title":"OnePlus 9R",
+        "img":"../img/mobiles/9r.png",
+        "type":"mobile",
+        "description":"The brand new oneplus 9r comes with a flagship performance with a processing chip of snapdragon 8gen2.The camera captures photos with a 100mp rear-camera with 0.2mm depth sensor from sony."
+    },
+    {
+        "name":"iphone15promax",
+        "title":"Iphone15 Pro Max",
+        "img":"../img/mobiles/iphone15.jpeg",
+        "type":"mobile",
+        "description":"New Iphone 15 is here with performance at its peak.The phone is equipped with A16 bionic chip that gives outperforming speed in gaming and heavy tasking."
+    },
+    {
+        "name":"redmagic9pro",
+        "title":"RedMagic 9pro",
+        "img":"../img/mobiles/redmagic9pro.png",
+        "type":"mobile",
+        "description":"Performance that dominates and features that are countless.The RedMagic 9pro comes with the Qualcomm Snapdragon 8gen2 chip that support top-notch gaming experience."
+    },
+    {
+        "name":"nothing2",
+        "title":"Nothing 2",
+        "img":"../img/mobiles/nothing2.png",
+        "type":"mobile",
+        "description":"Nothing 2 is here with features for a generation.The al triple rear camera of 102mp takes shots at its best,and the 1.0mm sony's depth sensor captures excellent bokehs and potraits.Own nothing,but standout."
+    },
+    {
+        "name":"gpixel8pro",
+        "title":"Google Pixel 8pro",
+        "img":"../img/mobiles/gpixel.png",
+        "type":"mobile",
+        "description":"Google has now release the phone of techies choice.The Google Pixel 8pro comes with highest camera resolution with 0.4mm depth sensors for rear camera from canon."
+    },
+    {
+        "name":"realmenarzo",
+        "title":"Realme Narzo12pro",
+        "img":"../img/mobiles/narzo.png",
+        "type":"mobile",
+        "description":"Realme just launched the Narzon 12pro that comes with a super amoled display with 120hz refresh rate.The processor is from mediatek dimensity 1200 designed exclusively for higher performance metrics."
+    }
+]
+}

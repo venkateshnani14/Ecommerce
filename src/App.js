@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react'
+import Tictactoe from './components/Tictactoe';
+import Navbar from './components/Navbar';
+import Headphones from './components/Headphones'
+import Mobiles from './components/Mobiles'
+import data from "./data/data.json"
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
-function App() {
+const App = () => {
+    const [landingPage,setLandingPage] = useState({data});
+    useEffect(()=>{setLandingPage(data)},[]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Navbar/>} Component={Navbar}/>
+        <Route path='/tictactoe' element={<Tictactoe/>}/>
+        <Route path='/electronics/headphones' element={<Headphones data = {landingPage.Headphones}/>}/>
+        <Route path='/electronics/mobiles' element={<Mobiles data = {landingPage.Mobiles}/>}/>
+      </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
-export default App;
+export default App

@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+li{
+  margin-right: 0%;
+}
+#editBtn{
+  margin-right: 5%;
+}
+#btnDiv{
+  display: inline;
+  margin-left: 2px;
+}
+#items{
+  margin: 5% 0%;
+}
+.navLink{
+  padding: 20px 0px;
+}
+.navLink:hover{
+  text-decoration: none;
+}
+.ant-menu-submenu-selected{
+  color:white !important;
+  background-color: darkblue !important;
+  border-radius: 25%;
+}
