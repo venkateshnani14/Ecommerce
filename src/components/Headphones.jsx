@@ -10,7 +10,7 @@ const Headphones = (props) => {
     <div style={{background:"whitesmoke"}}>
       <Navbar/>
       <div>
-    <h1 className='text-center mb-5 mt-0 text-secondary'>Explore our latest smartphone launches and avail best deals & discounts.</h1>
+    <h1 className='text-center mb-5 mt-0 text-secondary'>Take a look at our audio products exclusively picked for your listening style.</h1>
     <div className='container'>
         <div className='row'>
         {props.data?
