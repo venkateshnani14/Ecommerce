@@ -7,7 +7,7 @@ const Homepage = () => {
   const iconStyle = {fontSize:"18px"}
   const menTitle = <span>Men <ManOutlined style={iconStyle}/></span>
   const womenTitle = <span>Women <WomanOutlined style={iconStyle}/></span>
-  const cartStyle = <span>My cart <ShoppingCartOutlined style={iconStyle}/></span>
+  const cartStyle = <span><span className='fs-12 fs-sm-14 fs-md-16 fs-lg-18 fs-xl-20'>My cart </span><ShoppingCartOutlined style={iconStyle}/></span>
    const navigate = useNavigate();
    const onClick = ()=>{
    navigate('/cart');
@@ -16,11 +16,11 @@ const Homepage = () => {
     <div>
       <Menu style={navStyle} className='bg-primary text-light mb-5' mode='horizontal'>
       <Menu.SubMenu style={navStyle}  key="fashion" title="Fashion">
-        <Menu.SubMenu key="men" to="fashion/men" title={menTitle}>
-          <Menu.Item key="men">
+        <Menu.SubMenu key="menSubmenu" to="fashion/men" title={menTitle}>
+          <Menu.Item key="menUppers">
           <Link className='navLink' to="/fashion/shirts">Uppers</Link>
           </Menu.Item>
-          <Menu.Item key="men">
+          <Menu.Item key="menLowers">
           <Link className='navLink' to="/fashion/pants">Lowers</Link>
           </Menu.Item>
         </Menu.SubMenu>
@@ -65,7 +65,7 @@ const Homepage = () => {
           <Link className='navLink' to="/submenu/lotions">Bodycare</Link>
         </Menu.Item>
       </Menu.SubMenu>
-    <Menu.SubMenu style={navStyle} onTitleClick={onClick} title={cartStyle} to="/cart"></Menu.SubMenu>
+    <Menu.SubMenu style={navStyle} key="cart" onTitleClick={onClick} title={cartStyle} to="/cart"></Menu.SubMenu>
       </Menu>
       <div className="custom-collapse-btn">
           <MenuOutlined style={{ fontSize: '18px', color: '#ffff' }} />
