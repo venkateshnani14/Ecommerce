@@ -14,7 +14,7 @@ const Homepage = () => {
   }
   return (
     <div>
-      <Menu style={navStyle} className='bg-primary text-light mb-5' mode='horizontal'>
+      <Menu style={navStyle} className='bg-primary text-light mb-1' mode='horizontal'>
       <Menu.SubMenu style={navStyle}  key="fashion" title="Fashion">
         <Menu.SubMenu key="menSubmenu" to="fashion/men" title={menTitle}>
           <Menu.Item key="menUppers">

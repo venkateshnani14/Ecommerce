@@ -1,45 +1,57 @@
 {
     "Headphones":[{
         "name":"sennheiser_cx180s",
+        "id":"Sennheiser CX180S",
         "type":"headphones",
-        "title":"Sennheiser CX180s",
+        "price":"1599",
+        "title":"Sennheiser CX 180 Street II In-Ear Headphone (Black), without Mic",
         "description":"The new sennheiser cx180s comes with a dual driver mode of size 9.2mm along with a microphone for calls.",
-        "img":"../img/headphones/cx180.jpg"
+        "img":"/img/headphones/cx180.jpg"
     },
     {
-        "name":"sonymdr",
+        "name":"sonymdrex225aplqin",
+        "id":"Sony MDR_EX225",
         "type":"headphones",
-        "title":"Sony MDR",
+        "price":"999",
+        "title":"Sony MDR EX225-APLQIN wired earphone with mic(in-ear)",
         "description":"Sony MDR wired earphones come with an ultralight weight body and outperforming sound quality as always.Inbuilt microphone for calls along with a 3.5mm titanium coated jack.",
-        "img":"../img/headphones/mdr.jpg"
+        "img":"/img/headphones/mdr.jpg"
     },
     {
         "name":"kzedxpro",
+        "id":"KZ EDX-PRO",
         "type":"headphones",
-        "title":"KZ-EDX PRO",
+        "price":"1099",
+        "title":"KZ EDX PRO Wired Earphones, 1DD in-Ear Headphones HiFi Earbuds Deep Bass Sound with New 10mm Dynamic Driver with 2Pin 0.75mm Detachable Cable, Cyan no Mic",
         "description":"CONCEPT KART KZ EDX 1DD Composite Magnetic Dynamic Driver HiFi in-Ear Wired Earphone IEM with Detachable 0.75mm 2 Pin Cable with mic (Black, 10mm ).",
-        "img":"../img/headphones/kzedxpro.png"
+        "img":"/img/headphones/kzedxpro.png"
     },
     {
         "name":"boultaudioloop",
+        "id":"Boult Audioloop",
         "type":"headphones",
-        "title":"Boult Audio Loop",
+        "price":"399",
+        "title":"Boult Audio Bassbuds Loop Wired in Ear Earphones with Mic with 12Mm Powerful Driver for Extra Bass with Customizable Ear Loop (Black)",
         "description":"Boult Audio Bassbuds Loop 2 Wired in Ear Earphones with Mic, 10mm Powerful Driver for Extra Bass with Customizable Ear Loop (Black).",
-        "img":"../img/headphones/boultaudioloop.png"
+        "img":"/img/headphones/boultaudioloop.png"
     },
     {
         "name":"boatbassheads225",
+        "id":"boAt bassHeads 225",
         "type":"headphones",
-        "title":"Boat Bassheads 225",
+        "price":"599",
+        "title":"boAt Bass Heads 225 in-Ear Wired Headphones with Mic (Frosty White)",
         "description":"Despite the metal construction, Boat BassHeads 225 are very lightweight & comes with a microphone & L-Shaped 3.5 mm audio jack which is again made up of metal.",
-        "img":"../img/headphones/boat225.jpg"
+        "img":"/img/headphones/boat225.jpg"
     },
     {
         "name":"skullcandy",
+        "id":"Skullcandy JIB",
         "type":"headphones",
-        "title":"SkullCandy JIB",
+        "price":"799",
+        "title":"Skullcandy Jib Wired in-Earphone with Mic (Black) (S2DUYK-343)",
         "description":"Skullcandy Jib Wired Headphones deliver immersive audio with enhanced bass, featuring a lightweight and ergonomic design for comfortable wear. Equipped with in-line controls, an adjustable cable, and universal compatibility, they offer a convenient and stylish audio experience.",
-        "img":"../img/headphones/skullcandyjib.jpg"
+        "img":"/img/headphones/skullcandyjib.jpg"
     }
 
     
@@ -47,45 +59,112 @@
 "Mobiles":[
     {
         "name":"oneplus9r",
-        "title":"OnePlus 9R",
-        "img":"../img/mobiles/9r.png",
-        "type":"mobile",
-        "description":"The brand new oneplus 9r comes with a flagship performance with a processing chip of snapdragon 8gen2.The camera captures photos with a 100mp rear-camera with 0.2mm depth sensor from sony."
+        "id":"OnePlus 9R",
+        "title":"OnePlus 9R 5G (Carbon Black, 128 GB)  (8 GB RAM)",
+        "price":"78,000",
+        "img":"/img/mobiles/9r.png",
+        "type":"mobiles",
+        "description":"Qualcomm Snapdragon 870 5G with upgraded Qualcomm Kryo 585 CPU that performs intense mobile computing at up to 3.2 GHz and also comes with an ultra-fast Qualcomm Adreno 650 GPU for superb on-device experiences Loaded with Quad rear camera module that features a 48 MP Main camera, 16 MP Ultra Wide angle Camera, 5 MP Macro camera and a 2 MP Monochrome camera. The device also comes with a 16 MP front Camera 6.55 Inches Fluid AMOLED display with 120 Hz of Refresh rate A Powerful 4500 mAh with 65 Watt Warp charging capability Oxygen OS based on Andriod 11 Hands-Free access to Alexa: Alexa on your phone lets you make phone calls, open apps, control smart home devices, access the library of Alexa skills, and more using just your voice while on-the-go. Download the Alexa app and complete hands-free setup to get started. Just ask - and Alexa will respond instantly"
     },
     {
         "name":"iphone15promax",
-        "title":"Iphone15 Pro Max",
-        "img":"../img/mobiles/iphone15.jpeg",
-        "type":"mobile",
+        "id":"Iphone15 Pro Max",
+        "title":"Apple iPhone 15 Pro (256 GB) - White Titanium",
+        "price":"1,15,000",
+        "img":"/img/mobiles/iphone15.jpeg",
+        "type":"mobiles",
         "description":"New Iphone 15 is here with performance at its peak.The phone is equipped with A16 bionic chip that gives outperforming speed in gaming and heavy tasking."
     },
     {
         "name":"redmagic9pro",
-        "title":"RedMagic 9pro",
-        "img":"../img/mobiles/redmagic9pro.png",
-        "type":"mobile",
+        "id":"RedMagic 9pro",
+        "title":"ZTE nubia Red Magic 9 Pro",
+        "price":"37,999",
+        "img":"/img/mobiles/redmagic9pro.png",
+        "type":"mobiles",
         "description":"Performance that dominates and features that are countless.The RedMagic 9pro comes with the Qualcomm Snapdragon 8gen2 chip that support top-notch gaming experience."
     },
     {
         "name":"nothing2",
-        "title":"Nothing 2",
-        "img":"../img/mobiles/nothing2.png",
-        "type":"mobile",
+        "id":"Nothing 2",
+        "title":"Nothing Phone (2) 5G (White, 12GB RAM, 256GB Storage) | 6.7 Inch LTPO OLED AMOLED Display | 50 MP(OIS)+50MP | 32MP Front Camera | Qualcomm Snapdragon 8+Gen 1 | 4700 mAh Battery 45W:100% in 55 Minutes",
+        "price":"47,999",
+        "img":"/img/mobiles/nothing2.png",
+        "type":"mobiles",
         "description":"Nothing 2 is here with features for a generation.The al triple rear camera of 102mp takes shots at its best,and the 1.0mm sony's depth sensor captures excellent bokehs and potraits.Own nothing,but standout."
     },
     {
         "name":"gpixel8pro",
-        "title":"Google Pixel 8pro",
-        "img":"../img/mobiles/gpixel.png",
-        "type":"mobile",
+        "id":"Google Pixel 8pro",
+        "title":"Google Pixel 8 Pro (Bay, 128 GB)  (12 GB RAM)#JustHere",
+        "price":"43,999",
+        "img":"/img/mobiles/gpixel.png",
+        "type":"mobiles",
         "description":"Google has now release the phone of techies choice.The Google Pixel 8pro comes with highest camera resolution with 0.4mm depth sensors for rear camera from canon."
     },
     {
         "name":"realmenarzo",
-        "title":"Realme Narzo12pro",
-        "img":"../img/mobiles/narzo.png",
-        "type":"mobile",
+        "id":"Realme Narzo50",
+        "title":"realme Narzo 50 (Speed Black, 128 GB)  (6 GB RAM)",
+        "price":"18,999",
+        "img":"/img/mobiles/narzo.png",
+        "type":"mobiles",
         "description":"Realme just launched the Narzon 12pro that comes with a super amoled display with 120hz refresh rate.The processor is from mediatek dimensity 1200 designed exclusively for higher performance metrics."
     }
+],
+"Laptops":[{
+    "name":"macbookairm2",
+    "id":"macbookair m2",
+    "title":"Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey",
+    "price":"104,990",
+    "img":"/img/laptops/macbookm2.jpg",
+    "type":"laptops",
+    "description":"Fuelled by the M2 chip, the 13.6-inch Apple MacBook Air amplifies speed across diverse tasks, from video editing to seamless online shopping. With an all-day battery life, users can enjoy seamless and powerful performance without the need for frequent charging."
+},
+{
+    "name":"asusvivobook14x",
+    "id":"AsusVivobook14x",
+    "title":"ASUS Vivobook 14X OLED, Intel Core i9-13900H 13th Gen, 14 \" (35.56 cm) 2.8K 90Hz OLED, Creator Laptop (16 GB RAM/1TB SSD/4GB RTX 3050/Win11//Backlit KB/Fingerprint/Black/1.45 kg), K3405VCB-KM951WS",
+    "price":"104,990",
+    "img":"/img/laptops/asusvivobook14x.jpg",
+    "type":"laptops",
+    "description":"Vivobook 14X OLED has everything a creator needs, including a top-notch NVIDIA GeForce RTX GPU. Whether you’re just starting out on your creative journey, or need to tackle pro-level rendering or livestreaming, you’ll nail it thanks to the advanced GPU features like ray tracing, AI acceleration and speedy GDDR6 memory. And for maximum performance and stability."
+},
+{
+    "name":"hppavilion14",
+    "id":"hp pavilion-14",
+    "title":"HP Pavilion 14 12th Gen Intel Core i7 16GB SDRAM/1TB SSD 14 inch(35.6cm) FHD,IPS,Micro-Edge Display/Intel Iris Xe Graphics/B&O/Win 11/Alexa Built-in/Backlit KB/FPR/MSO 2021/Natural Silver,14-dv2015TU",
+    "price":"78,990",
+    "img":"/img/laptops/hppavilion14.jpg",
+    "type":"laptops",
+    "description":"Display & Graphics: 35.6 cm (14\") diagonal, FHD, IPS, micro-edge, BrightView, 250 nits, 157 ppi | Graphics: Intel UHD Graphics;Operating System & Pre-installed Software: Pre-loaded Windows 11 Home 64 Single Language| Microsoft Office Home & Student 2021|McAfee LiveSafe (30 days free trial as default)| Pre-installed Alexa built-in- Your life simplified with Alexa. Just ask Alexa to check your calendar, create to-do lists, shopping lists, play music, set reminders, get latest news and control smart home."
+},
+{
+    "name":"lenovolegion5pro",
+    "id":"Lenovo-legion 5pro",
+    "title":"Lenovo [SmartChoice Legion 5 Pro AMD Ryzen 7 5800H, 16 Inch 500Nits QHD Gaming Laptop(16GB/1TB SSD/RTX 3060 6GB GDDR6 Graphics/165Hz/Win 11/MSO'21/RGB Backlit/3mnth Xbox Game Pass/2.45Kg), 82JQ00JCIN",
+    "price":"112,099",
+    "img":"/img/laptops/lenovolegion.jpg",
+    "type":"laptops",
+    "description":"NVIDIA GeForce RTX 3060 6GB GDDR6 Dedicated Graphics with max TGP 130W | Boost Clock 1425/1702MHz | Free-Sync and G-Sync || Memory and Storage: 16GB RAM DDR4-3200, Upgradable up to 32GB | 1TB SSD, Upgradable upto 2TB SSD  Upto 15% more FPS and Best performance with Auto Detect Mode (Top 16 AAA Titles) and Auto Optimisation Mode | Q Control 4.0 to select between Quiet (Blue), Intelligent (White) and Performance (Red) Modes"
+},
+{
+    "name":"samsunggalaxybook3",
+    "id":"samsung-book3",
+    "title":"Samsung Galaxy Book3 360 Intel 13th Gen i7 EvoTM 39.6cm(15.6\") Super Amoled 2-in-1 Touchscreen Laptop (16 GB/1 TB SSD/Windows11/MS Office/Backlit KB/Fingerprint Sensor/Graphite/1.46Kg), NP750QFG-KA3IN",
+    "price":"138,990",
+    "img":"/img/laptops/samsungbook3.jpg",
+    "type":"laptops",
+    "description":"13th Gen Intel Core i7-1360P processor up to 5.0 GHz 18 MB L3 Cache) | Memory: 16 GB LPDDR4x Memory | Storage: 1 TB NVMe SSD, additional slot- expandable upto 1TB | Intel Iris Xe Graphics.Windows 11 Home | Pre-Installed Software: MS Office Home & Student 2021, Galaxy Ecosystem Apps"
+},
+{
+    "name":"dellinspiron5430",
+    "id":"Delli-nspiron5430",
+    "title":"Dell Inspiron 5430 Laptop, 13th Gen Intel Core i7-1360P Processor/16GB/1TB SSD/14.0\" (35.56cm) FHD+ WVA 250 nits/Backlit KB + FPR/Win 11 + MSO'21/15 Month McAfee/Platinum Silver/Thin & Light- 1.59kg",
+    "price":"82,999",
+    "img":"/img/laptops/dellinspiron5430.jpg",
+    "type":"laptops",
+    "description":"Intel 13th Gen i7-1360P (up to 5.00 GHz) 18MB Cache + 12 Cores RAM: 16 GB, LPDDR5, 4800 MHz // Storage: 1TB SSD.Pre-Loaded Windows 11 Home with Lifetime Validity | MS Office Home and Student 2021 with lifetime validity| McAfee Multi-Device Security 15-month subscription"
+}
 ]
 }

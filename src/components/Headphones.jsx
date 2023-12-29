@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router";
 import Navbar from './Navbar'
 import { ShoppingCartOutlined } from '@ant-design/icons'
 const Headphones = (props) => {
-  const truncate = (description)=>{
-    if(description.length>=100)return description.substring(0,100) + "...";
+  const truncate = (description,lengthy)=>{
+    if(description.length>=lengthy)return description.substring(0,100) + "...";
     else return description;
 }
 const nav = useNavigate();
@@ -20,10 +20,10 @@ const nav = useNavigate();
         props.data.map((d,i)=>(
         <div className='container-lg m-5' key={i}>
             <div className="card shadow" style={{width:"17rem"}}>
-        <img src={d.img} className="card-img-top" alt="unavailable" style={{padding:"25px"}} height="300px" />
+        <img src={d.img} className="card-img-top" alt="unavailable" style={{padding:"5px"}} height="300px" />
         <div className="card-body">
-          <h5 className="card-title">{d.title}</h5>
-          <p className="card-text text-secondary">{truncate(d.description)}</p>
+          <h5 className="card-title">{truncate(d.title,70)}</h5>
+          <p className="card-text text-secondary">{truncate(d.description,100)}</p>
           <div className='d-flex justify-content-between'>
           <button className="btn btn-md btn-success ms-3" onClick={()=>{nav(`/buy-now/${d.type}/${d.name}`)}}>Buy now</button>
           <a href="#asdf" className="btn btn-md btn-secondary">Add to cart <ShoppingCartOutlined /></a>

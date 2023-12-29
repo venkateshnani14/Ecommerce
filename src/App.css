@@ -60,3 +60,24 @@ li{
   background-color: darkblue !important;
   border-radius: 25%;
 }
+@media(max-width:600px){
+  #buyItem{
+    width:80%
+  }
+}
+@media(min-width:601px) and (max-width:800px){
+  #buyItem{
+    width: 60%;
+  }
+}
+@media(min-width:801px){
+  #buyItem{
+    width: 50%;
+  }
+}
+*{
+overflow-x: hidden;
+}
+#maindiv div h5,h1{
+  overflow-y: hidden;
+}
