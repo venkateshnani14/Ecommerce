@@ -60,24 +60,48 @@ li{
   background-color: darkblue !important;
   border-radius: 25%;
 }
-@media(max-width:600px){
-  #buyItem{
-    width:80%
-  }
+/* Mobiles */
+@media(max-width:600px){#laptopImg{height:200px}
+#laptopHead_lg{display:none}
+#slideshowDiv{height: 200px;background-size: contain}
 }
+/* Tablets */
+ /* @media(min-width:400px)and(max-width:600px){
+  #buyItem{width:80%}
+  #laptopImg{height:300px}
+  #laptopHead_lg{display:none}
+  #laptopHead_sm{padding:10px}
+  #slideshowDiv{height: 300px !important;background-size: contain !important}
+  #slideshowParent{height: 300px !important}
+  }  */
+/* Small laptops */
 @media(min-width:601px) and (max-width:800px){
-  #buyItem{
-    width: 60%;
-  }
+  #buyItem{width: 60%}
+  #laptopImg{height:300px}
+  #laptopHead_sm{display:none}
+  #slideshowDiv{height: 600px;background-size: cover;}
+  #slideshowParent{height: 600px;}
 }
+/* Desktops */
 @media(min-width:801px){
-  #buyItem{
-    width: 50%;
-  }
+  #buyItem{width: 50%}
+  #laptopImg{height:400px}
+  #laptopHead_sm{display:none}
+  #slideshowDiv{height: 730px;background-size: cover;}
+  #slideshowParent{height: 730px;}
 }
-*{
+#buyDiv{
 overflow-x: hidden;
 }
 #maindiv div h5,h1{
-  overflow-y: hidden;
+overflow-y: hidden;
+}
+#laptopCouponCode{
+  font-size:120%
+}
+#slideshowDiv{
+  background-repeat: no-repeat;
+}
+.bg-beige {
+  background-color: rgb(188, 188, 142);
 }

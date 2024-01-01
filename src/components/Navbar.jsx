@@ -2,7 +2,7 @@ import React from 'react'
 import {Menu} from 'antd';
 import {Link, useNavigate } from 'react-router-dom';
 import {MobileOutlined,ManOutlined,WomanOutlined,ShoppingCartOutlined,MenuOutlined} from '@ant-design/icons'
-const Homepage = () => {
+const Navbar = (props) => {
   const navStyle = {textDecoration:'none',fontSize:'x-large',padding:"7px 20px"}
   const iconStyle = {fontSize:"18px"}
   const menTitle = <span>Men <ManOutlined style={iconStyle}/></span>
@@ -13,9 +13,9 @@ const Homepage = () => {
    navigate('/cart');
   }
   return (
-    <div>
-      <Menu style={navStyle} className='bg-primary text-light mb-1' mode='horizontal'>
-      <Menu.SubMenu style={navStyle}  key="fashion" title="Fashion">
+    <div className='mb-0 pb-0'>
+      <Menu style={navStyle} className={props.marginStyle} mode='horizontal' placement="bottomLeft">
+      <Menu.SubMenu style={navStyle}  key="fashion" title="Fashion" placement="bottomLeft">
         <Menu.SubMenu key="menSubmenu" to="fashion/men" title={menTitle}>
           <Menu.Item key="menUppers">
           <Link className='navLink' to="/fashion/shirts">Uppers</Link>
@@ -34,7 +34,7 @@ const Homepage = () => {
         </Menu.SubMenu>
       </Menu.SubMenu>
 
-        <Menu.SubMenu style={navStyle}  key="electronics" title="Electronics">
+        <Menu.SubMenu style={navStyle}  key="electronics" title="Electronics" placement="bottomLeft">
         <Menu.Item key="headphones">
           <Link className='navLink' to="/electronics/headphones">Headphones</Link>
         </Menu.Item>
@@ -67,12 +67,9 @@ const Homepage = () => {
       </Menu.SubMenu>
     <Menu.SubMenu style={navStyle} key="cart" onTitleClick={onClick} title={cartStyle} to="/cart"></Menu.SubMenu>
       </Menu>
-      <div className="custom-collapse-btn">
-          <MenuOutlined style={{ fontSize: '18px', color: '#ffff' }} />
-      </div>
     </div>
   )
 }
 
-export default Homepage
+export default Navbar
 

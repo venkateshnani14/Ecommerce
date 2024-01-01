@@ -13,8 +13,8 @@ const Buy = (props) => {
     else return description;
 }
     return (
-      <div>
-        <Navbar />
+      <div id="buyDiv">
+        <Navbar marginStyle='bg-dark text-light mb-4'/>
         {
           props.data[capitalizedItemType]?props.data[capitalizedItemType].map((d,i)=>{
             if(d.name!==itemId) return;

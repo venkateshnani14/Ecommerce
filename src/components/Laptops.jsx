@@ -15,16 +15,16 @@ export const CardItem = (d,i)=>{
         else return description;
     }
     return(
-    <div id='maindiv' className='col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mt-5' key={i}>
-    <div className="card shadow" style={{maxwidth:"25rem"}}>
-    <img src={d.img} className="card-img-top" alt="..." height="300px" style={{maxWidth:"28rem"}} />
+    <div id='maindiv' className='container col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mt-5' key={i} style={{}}>
+    <div className="card shadow d-flex flex-columnn align-items-center" style={{maxwidth:"25rem",margin:"0px 3% 0px 3%"}}>
+    <img id="laptopImg" src={d.img} className="card-img-top" alt="..." style={{maxWidth:"28rem"}} />
     <div className="card-body">
     <hr/>
     <p className='font-weight-bold text-dark' style={{fontSize:"30px"}}><p className='text-danger d-inline font-weight-light' style={{fontsize:"15px"}}>-33%  </p><sup className='d-inline font-weight-light text-dark'>₹</sup>{d.price}</p>
       <h5 className="card-title">{truncate(d.title,125)}</h5>
       <p className="card-text text-secondary">{truncate(d.description,200)}</p>
       <div className='d-flex justify-content-between'>
-      <button className="btn btn-md btn-success ms-3" onClick={()=>{nav(`/buy-now/${d.type}/${d.name}`)}}>Get this</button>
+      <button className="btn btn-md btn-success ms-3" onClick={()=>{nav(`/buy-now/${d.type}/${d.name}`)}}> Get this </button>
       <button className={cartBtnState} onClick={cartBtn}>{cartText} <ShoppingCartOutlined /></button>
       </div>
     </div>
@@ -33,16 +33,19 @@ export const CardItem = (d,i)=>{
     )
 }
 const Laptops = (props) => {
+    console.log(props)
 return(
    <div>
     <div style={{background:"whitesmoke"}}>
-    <Navbar/>
-    <h1 className='text-center mt-0 text-secondary'>Explore our latest laptop launches and grab awesome deals before the season ends.</h1>
+    <Navbar marginStyle='bg-dark text-light mb-5'/>
+    <h1 id='laptopHead_lg' className='text-center mt-0 text-secondary'>Explore our latest laptop launches and grab awesome deals before the season ends.</h1>
+    <h4 id='laptopHead_sm' className='text-center mt-0 text-secondary'>Explore our latest laptop launches and grab awesome deals before the season ends.</h4>
+    <p id='laptopCouponDescription' className='mb-0 font-size-lg mx-5 text-muted'>Use coupon code <span id="laptopCouponCode" className='font-weight-bold text-success'>IMVENGEANCE</span> to avail discount of 20% on your first purchase.</p>
     <div className='container-sm'>
         <div className='row'>
         {props.data?props.data.map((d,i)=>(
         <CardItem key={i} {...d}/>
-    )):"Sorry..."}
+    )):"Oops...Sorry for the inconvenience"}
         </div>
     </div>
     <div className='d-flex justify-content-between mx-5 pt-5 pb-3'>

@@ -10,7 +10,7 @@ const truncate = (description)=>{
     let nav  = useNavigate();
 return(
    <div style={{background:"whitesmoke"}}>
-    <Navbar/>
+    <Navbar marginStyle='bg-dark text-light mb-5'/>
     <h1 className='text-center mt-0 text-secondary'>Explore our latest smartphone launches and avail best deals & discounts.</h1>
     <div className='container-sm'>
         <div className='row'>

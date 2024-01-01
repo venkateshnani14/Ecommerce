@@ -166,5 +166,19 @@
     "type":"laptops",
     "description":"Intel 13th Gen i7-1360P (up to 5.00 GHz) 18MB Cache + 12 Cores RAM: 16 GB, LPDDR5, 4800 MHz // Storage: 1TB SSD.Pre-Loaded Windows 11 Home with Lifetime Validity | MS Office Home and Student 2021 with lifetime validity| McAfee Multi-Device Security 15-month subscription"
 }
-]
+],
+"Slides":[
+{
+    "name":"one",
+    "img":"/img/banners/one.jpg"
+},
+{
+    "name":"two",
+    "img":"/img/banners/two.jpg"
+},
+{
+    "name":"three",
+    "img":"/img/banners/three.jpg"
 }
+]}
+

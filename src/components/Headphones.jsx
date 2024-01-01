@@ -11,7 +11,7 @@ const nav = useNavigate();
 
   return (
     <div style={{background:"whitesmoke"}}>
-      <Navbar/>
+      <Navbar marginStyle='bg-dark text-light mb-5'/>
       <div>
     <h1 className='text-center mb-5 mt-0 text-secondary'>Take a look at our audio products exclusively picked for your listening style.</h1>
     <div className='container'>
