@@ -105,3 +105,18 @@ overflow-y: hidden;
 .bg-beige {
   background-color: rgb(188, 188, 142);
 }
+#mobileImg{
+  min-height: 400px;
+  max-height: 400px;
+}
+#mobileDivChild{
+  min-height: 720px;
+}
+#beautyItem:hover{border-bottom: white}
+/* Add this CSS to your styles */
+.ant-menu-item:hover {
+  border-bottom: 2px solid 	#52bce6; /* Change 'red' to your desired color */
+}
+.ant-menu-submenu{
+  border-bottom:#282c34
+}

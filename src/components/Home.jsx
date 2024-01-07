@@ -2,13 +2,12 @@ import React from 'react'
 import Navbar from './Navbar'
 import Slideshow from './Slideshow'
 import data from '../data/data.json'
-const Home = () => {
+const Home = (props) => {
   return (
     <div>
-     <Navbar marginStyle='bg-dark text-light mb-0' /> 
-     <Slideshow data={data.Slides}/>
+     <Navbar marginStyle='bg-dark text-light mb-0' cart={props.cart} />
+     <Slideshow data={data.Slides} />
     </div>
-
   )
 }
 

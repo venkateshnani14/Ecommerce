@@ -2,6 +2,7 @@ import {React,useState} from 'react'
 import Navbar from './Navbar'
 import { useNavigate } from 'react-router'
 import {ShoppingCartOutlined} from '@ant-design/icons'
+
 export const CardItem = (d,i)=>{
     let nav  = useNavigate();
     const [cartBtnState,setCartBtnState] = useState("btn btn-md btn-danger");
@@ -32,20 +33,20 @@ export const CardItem = (d,i)=>{
     </div>
     )
 }
-const Laptops = (props) => {
-    console.log(props)
+
+const Laptops = ({data}) => {
 return(
    <div>
     <div style={{background:"whitesmoke"}}>
-    <Navbar marginStyle='bg-dark text-light mb-5'/>
+    <Navbar Style='bg-secondary text-light mb-5'/>
     <h1 id='laptopHead_lg' className='text-center mt-0 text-secondary'>Explore our latest laptop launches and grab awesome deals before the season ends.</h1>
     <h4 id='laptopHead_sm' className='text-center mt-0 text-secondary'>Explore our latest laptop launches and grab awesome deals before the season ends.</h4>
     <p id='laptopCouponDescription' className='mb-0 font-size-lg mx-5 text-muted'>Use coupon code <span id="laptopCouponCode" className='font-weight-bold text-success'>IMVENGEANCE</span> to avail discount of 20% on your first purchase.</p>
     <div className='container-sm'>
         <div className='row'>
-        {props.data?props.data.map((d,i)=>(
+        {data?data.map((d,i)=>(
         <CardItem key={i} {...d}/>
-    )):"Oops...Sorry for the inconvenience"}
+    )):"Oops...No data found"}
         </div>
     </div>
     <div className='d-flex justify-content-between mx-5 pt-5 pb-3'>
