@@ -42,12 +42,12 @@ const Cart = ({cartItemsArray,unsortedData}) => {
       if(cartItemsArray[i]===element.name)arr.push(<CartList key={i} element = {element}/>)
     })
   }
-  console.log(arr)
+  
   return (
     <div style={{backgroundColor:"whitesmoke"}}>
       <div className='d-flex align-items-center justify-content-between flex-column my-3 bg-light'>
         <div><h1>My cart</h1><hr className='cartHr'/></div>
-        <h4 className='my-3'>{arr.length>0?"Hey venkatesh,items in your cart are waitin' to hop into your bag🥺":<h2 className='text-center pb-4'>No items in the cart</h2>}</h4>
+        <h4 className='my-3'>{arr.length>0?"Hey venkatesh,can we all hop into your bag ??🥺":<h2 className='text-center pb-4'>No items in the cart</h2>}</h4>
         </div>
         <div className='container'>
           {arr.length>0?arr:""}

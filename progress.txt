@@ -1,0 +1,3 @@
+Images:
+// use 001.jpg for loginPage backgrd.
+needs fixing of the addedToCart btn state.State is getting to normal on revisiting the page

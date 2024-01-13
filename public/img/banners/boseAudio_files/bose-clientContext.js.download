@@ -1,0 +1,1 @@
+var Bose=Bose||{};Bose.ClientContext=Bose.ClientContext||{},Bose.ClientContext.init=function(){"undefined"!=typeof $CQ&&($CQ.fn.select2=$jq.fn.select2,$CQ.fn.draggable=$jq.fn.draggable,$CQ.fn.resizable=$jq.fn.resizable)},$jq(document).ready(Bose.ClientContext.init);

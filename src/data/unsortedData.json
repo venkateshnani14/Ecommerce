@@ -49,6 +49,16 @@
     "img":"/img/headphones/boat225.jpg"
 },
 {
+    "name":"bosequietfit",
+    "id":"Bose QuietComfort",
+    "title":"Bose New QuietComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with Up to 24 Hours of Battery Life - Cypress Green",
+    "price":"27,899",
+    "discount":"12%",
+    "img":"/img/headphones/boseQuietComfort.jpg",
+    "type":"headphones",
+    "description":"Qualcomm Snapdragon 870 5G with upgraded Qualcomm Kryo 585 CPU that performs intense mobile computing at up to 3.2 GHz and also comes with an ultra-fast Qualcomm Adreno 650 GPU for superb on-device experiences Loaded with Quad rear camera module that features a 48 MP Main camera, 16 MP Ultra Wide angle Camera, 5 MP Macro camera and a 2 MP Monochrome camera. The device also comes with a 16 MP front Camera 6.55 Inches Fluid AMOLED display with 120 Hz of Refresh rate A Powerful 4500 mAh with 65 Watt Warp charging capability Oxygen OS based on Andriod 11 Hands-Free access to Alexa: Alexa on your phone lets you make phone calls, open apps, control smart home devices, access the library of Alexa skills, and more using just your voice while on-the-go. Download the Alexa app and complete hands-free setup to get started. Just ask - and Alexa will respond instantly"
+},
+{
     "name":"skullcandy",
     "id":"Skullcandy JIB",
     "type":"headphones",
@@ -189,6 +199,26 @@
 {
 "name":"three",
 "img":"/img/banners/three.jpg"
+},
+{
+    "name":"hyperx",
+    "id":"Hyper X CloudStinger",
+    "type":"headphones",
+    "price":"6,999",
+    "discount":"39%",
+    "title":"HyperX Cloud Stinger 2 Core Gaming Headset for Playstation-White (6H9B5Aa),Over Ear,Wired",
+    "description":"The HyperX Cloud Stinger 2 Core is the essential entry-level PlayStation affordable headset. Cloud Stinger 2 Core delivers great, immersive sound, comfort, and convenience; all the basic things PlayStation players want from a gaming headset. With audio controls right on the headset itself and a swivel-to-mute mic, you won’t need to interrupt your game and fiddle with menus just to change the volume or mute yourself.",
+    "img":"/img/headphones/hyperX.jpg"
+},
+{
+    "name":"bosebuds",
+    "id":"Bose Sport Earbuds",
+    "type":"headphones",
+    "price":"13,999",
+    "discount":"11%",
+    "title":"ENGINEERED FOR YOUR BEST WORKOUT YET",
+    "description":"Bose Sport Earbuds are designed from the ground up to energise your exercise with acclaimed lifelike sound and a comfortable, secure fit. Proprietary technologies make your music sound clear and balanced, no matter how loud you turn it up, while the earbuds’ sleek design allows them to sit close to your ears. And the eartips won’t hurt your ears no matter how long you exercise for, and won’t fall out no matter how much you move. Get ready to beat your personal best, again and again.",
+    "img":"/img/headphones/boseBuds.png"
 }
 ]
 }

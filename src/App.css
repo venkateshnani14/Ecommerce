@@ -132,4 +132,26 @@ overflow-y: hidden;
     height:50px !important;
     width:50px !important;
   }
+  .imgTextDiv{
+    display:none
+  }
+}
+.pitchBlack_whiteText {
+  background-color: black;
+  color: white;
+}
+#bgStyle{
+  background-image: url(../public/img/banners/bose1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75dvh;
+}
+.imgTextDiv{
+  width: 450px;
+  height: 350px;
+  margin-left: 15%;
+  padding-top: 7%;
+  opacity: 0;
+  
 }
