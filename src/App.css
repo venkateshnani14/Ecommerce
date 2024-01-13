@@ -64,6 +64,7 @@ li{
 @media(max-width:600px){#laptopImg{height:200px}
 #laptopHead_lg{display:none}
 #slideshowDiv{height: 200px;background-size: contain}
+#cardShadow{width:150%}
 }
 /* Tablets */
  /* @media(min-width:400px)and(max-width:600px){
@@ -111,12 +112,24 @@ overflow-y: hidden;
 }
 #mobileDivChild{
   min-height: 720px;
+  width:100%
+}
+#mainMobileDiv{
+  overflow-x:hidden
 }
 #beautyItem:hover{border-bottom: white}
-/* Add this CSS to your styles */
 .ant-menu-item:hover {
   border-bottom: 2px solid 	#52bce6; /* Change 'red' to your desired color */
 }
 .ant-menu-submenu{
   border-bottom:#282c34
+}
+#cardShadow{
+  width:100%
+}
+@media(min-width:300px)and(max-width:500px){
+  .imgDivStyle{
+    height:50px !important;
+    width:50px !important;
+  }
 }

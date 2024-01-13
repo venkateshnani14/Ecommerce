@@ -12,15 +12,19 @@ const divStyle = {
   alignItems: 'center',
   justifyContent: 'center'
 }
+const slideProps = {
+  duration:"4000",
+  transitionDuration:"300",
+  indicators:"true"
+}
 
 const Slideshow = (props) => {
     return (
       <div className="slide-container mt-0 pt-0">
-        <Slide>
+        <Slide {...slideProps}>
          {props.data?props.data.map((slideImage, index)=> (
             <div id='slideshowParent' key={index} className='mt-0'>
               <div id='slideshowDiv' className='container-fluid' style={{ ...divStyle, 'backgroundImage': `url(${slideImage.img})` }}>
-                {/* <p style={pStyle}>{slideImage.name}{console.log(slideImage.name)}</p> */}
               </div>
             </div>
           )):"no content available"} 
