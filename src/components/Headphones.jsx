@@ -58,7 +58,6 @@ export const ComponentHeadphones = (props)=>{
                 setCartBtnState("btn btn-md btn-secondary btn-disabled");
                 setCartText("Added to cart");
             }
-          
   // useEffect(()=>{
   //   return()=>{  localStorage.setItem(`cartBtnState${props.key}`,JSON.stringify(cartBtnState))}
   // },[props.key])
