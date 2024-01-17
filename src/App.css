@@ -91,67 +91,33 @@ li{
   #slideshowDiv{height: 730px;background-size: cover;}
   #slideshowParent{height: 730px;}
 }
-#buyDiv{
-overflow-x: hidden;
-}
-#maindiv div h5,h1{
-overflow-y: hidden;
-}
-#laptopCouponCode{
-  font-size:120%
-}
-#slideshowDiv{
-  background-repeat: no-repeat;
-}
-.bg-beige {
-  background-color: rgb(188, 188, 142);
-}
-#mobileImg{
-  min-height: 400px;
-  max-height: 400px;
-}
-#mobileDivChild{
-  min-height: 720px;
-  width:100%
-}
-#mainMobileDiv{
-  overflow-x:hidden
-}
+#buyDiv{overflow-x: hidden;}
+#maindiv div h5,h1{overflow-y: hidden;}
+#laptopCouponCode{font-size:120%}
+#slideshowDiv{background-repeat: no-repeat;}
+.bg-beige {background-color: rgb(188, 188, 142);}
+#mobileImg{min-height: 400px;max-height: 400px;}
+#mobileDivChild{min-height: 720px;width:100%}
+#mainMobileDiv{overflow-x:hidden}
 #beautyItem:hover{border-bottom: white}
-.ant-menu-item:hover {
-  border-bottom: 2px solid 	#52bce6; /* Change 'red' to your desired color */
-}
-.ant-menu-submenu{
-  border-bottom:#282c34
-}
-#cardShadow{
-  width:100%
-}
+.ant-menu-item:hover {border-bottom: 2px solid 	#52bce6;}
+.ant-menu-submenu{border-bottom:#282c34}
+#cardShadow{width:100%}
 @media(min-width:300px)and(max-width:500px){
-  .imgDivStyle{
-    height:50px !important;
-    width:50px !important;
-  }
-  .imgTextDiv{
-    display:none
-  }
+  .imgDivStyle{height:50px !important;width:50px !important;}
+  .imgTextDiv{display:none}
 }
-.pitchBlack_whiteText {
-  background-color: black;
-  color: white;
-}
-#bgStyle{
-  background-image: url(../public/img/banners/bose1.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75dvh;
-}
-.imgTextDiv{
-  width: 450px;
-  height: 350px;
-  margin-left: 15%;
-  padding-top: 7%;
-  opacity: 0;
-  
-}
+.pitchBlack_whiteText {background-color: black;color: white;}
+#bgStyle{background-image: url(../public/img/banners/bose1.jpeg);background-size: cover;background-position: center;background-repeat: no-repeat;height: 75dvh;}
+.imgTextDiv{width: 450px;height: 350px;margin-left: 15%;padding-top: 7%;opacity: 0;}
+#mobImg:hover{cursor: pointer}
+.footer{min-height:80px}
+#footerMain{min-height:400px;width:100%;}
+.footerList li{color:grey;list-style:none;padding:2% 0%;letter-spacing:3px}
+li:hover{color:whitesmoke;cursor:pointer;text-decoration:underline}
+.row{padding:5% 0%}
+.h5Footer{color:lightgrey}
+.uniqueFooter{color:lightgrey}
+.uniqueFooter:hover{text-decoration:none;color:white;cursor:pointer}
+.h5Footer:hover{color:White;text-decoration:underline;cursor:pointer}
+.batmanLogo:hover{cursor:pointer}
