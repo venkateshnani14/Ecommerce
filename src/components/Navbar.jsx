@@ -1,21 +1,26 @@
-import {React,useState} from 'react'
+import {React,useState,useEffect} from 'react'
 import {Menu} from 'antd';
 import {Link, useNavigate } from 'react-router-dom';
 import {MobileOutlined,ManOutlined,WomanOutlined,ShoppingCartOutlined,MenuOutlined} from '@ant-design/icons'
+
 const Navbar = (props) => {
-  const lengthy = props.cartItemsArray.length
+  const [listLength,setListLength] = useState(0)
+  useEffect(()=>{
+    if(props.cartItemsArray){setListLength(props.cartItemsArray.length?props.cartItemsArray.length:0)}
+    else setListLength(0)
+  },[props.cartItemsArray])
   const navStyle = {textDecoration:'none',fontSize:'x-large',padding:"7px 20px"}
   const iconStyle = {fontSize:"26px"}
   const menTitle = <span>Men <ManOutlined style={iconStyle}/></span>
   const womenTitle = <span>Women <WomanOutlined style={iconStyle}/></span>
   const cartStyle = <span className='position-relative'><span className='fs-12 fs-sm-14 fs-md-16 fs-lg-18 fs-xl-20'>My cart </span><ShoppingCartOutlined style={iconStyle}/>
-  <span className='position-absolute top-0 badge rounded-pill transalte-midde bg-primary start-100 font-size-sm '>{lengthy}</span>
+  <span className='position-absolute top-0 badge rounded-pill transalte-midde bg-primary start-100 font-size-sm '>{listLength}</span>
   </span>
    const navigate = useNavigate();
    const onClick = ()=>{
    navigate('/cart');
   }
-  return (
+  return(
     <div className='mb-0 pb-0'>
       <Menu style={navStyle} className={props.marginStyle} mode='horizontal' placement="bottomLeft">
       <Menu.SubMenu id="fashionItem" style={navStyle}  key="fashion" title="Fashion" placement="bottomLeft">

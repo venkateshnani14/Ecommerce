@@ -49,24 +49,39 @@ export const Footer = ()=>{
   )}
 export const ComponentHeadphones = (props)=>{
     const nav = useNavigate();
-  const [cartBtnState,setCartBtnState] = useState(()=>{"btn btn-md btn-success"})
-              const [cartText,setCartText] = useState("Add to cart");
+  const [cartBtnState,setCartBtnState] = useState(()=>{
+    const storedStyleRaw = localStorage.getItem(`btnStyle-${props.index}`)
+    const storedStyleJson = storedStyleRaw ? JSON.parse(storedStyleRaw) : "btn btn-md btn-success"
+    return storedStyleJson;
+
+  })
+              const [cartText,setCartText] = useState(()=>{
+               const prevStoredTextRaw = localStorage.getItem(`btnText-${props.index}`)
+               const textJson = prevStoredTextRaw ? JSON.parse(prevStoredTextRaw) : "Add to cart"
+               return textJson
+              });
               const cartBtn = ()=>{
                 if(typeof props.cartItems==='function'){
                   props.cartItems(props.d.name);
                 }
-                setCartBtnState("btn btn-md btn-secondary btn-disabled");
-                setCartText("Added to cart");
+                setCartBtnState(()=>{
+                 const newStyle = "btn btn-md btn-secondary btn-disabled"
+                 localStorage.setItem(`btnStyle-${props.index}`,JSON.stringify(newStyle))
+                 return newStyle 
+                });
+                setCartText(()=>{
+                  const newState = "Added to cart"
+                  localStorage.setItem(`btnText-${props.index}`,JSON.stringify(newState))
+                  return newState
+                });
             }
-  // useEffect(()=>{
-  //   return()=>{  localStorage.setItem(`cartBtnState${props.key}`,JSON.stringify(cartBtnState))}
-  // },[props.key])
+
   const truncate = (description,max)=>{
     if(description.length>=max)return description.substring(0,max) + "...";
     else return description;
 }
   return(
-<div className='container col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center' key={props.i}>
+<div className='container col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center' key={props.index}>
         <div id="cardShadow" className="card shadow" style={{maxWidth:"25rem",margin:"0 3% 0 3%"}}>
         <img src={props.d.img} id="mobImg" className="card-img-top" alt="unavailable" style={{padding:"10px",maxWidth:"28rem"}} height="300px" onClick={()=>{nav(`/buy-now/${props.d.type}/${props.d.name}`)}}/>
         <div className="card-body">
@@ -90,8 +105,11 @@ const Headphones = ({data,cartItems,cartItemsArray}) => {
   useEffect(()=>{
     gsap.fromTo(".imgTextDiv",{opacity:0,y:100},{y:0,opacity:1,duration:1.5,ease:"power1"})
   },[location.pathname])
-
-
+  const [textState,setTextState] = useState(()=>{
+    const prevStored = localStorage.getItem('ClickMemory')
+    if(prevStored)return prevStored
+    else return "click me"
+  })
   return (
     <div className="mb-0" style={{background:"whitesmoke",overflowX:"hidden"}}>
       <Navbar marginStyle='pitchBlack_whiteText' cartItemsArray={cartItemsArray}/>
@@ -109,12 +127,13 @@ const Headphones = ({data,cartItems,cartItemsArray}) => {
     <div className="d-flex justify-content-center mb-3">
     <p id='laptopCouponDescription' className='mb-0 font-size-lg mx-5 text-muted'  style={{letterSpacing:"2px"}}>Use coupon code <span id="laptopCouponCode" className='font-weight-bold text-success'>IMVENGEANCE</span> to avail discount of 20% on your first purchase.</p>
     </div>
+
     <div className='container-sm'>
         <div className='row mb-5'>
         {
         data?
         data.map((d,i)=>(
-        <ComponentHeadphones key={i} d={d} cartItems={cartItems} />
+        <ComponentHeadphones index={i} d={d} cartItems={cartItems} />
     )):"Sorry..."}
         </div>
         <div className="container mb-5 pb-5">

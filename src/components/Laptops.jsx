@@ -1,17 +1,34 @@
 import {React,useState} from 'react'
 import Navbar from './Navbar'
+import {Footer as ImportedFooter} from './Headphones'
 import { useNavigate } from 'react-router'
 import {ShoppingCartOutlined} from '@ant-design/icons'
 
 export const CardItem = (props)=>{
     console.log(props.cartItemsArray)
     let nav  = useNavigate();
-    const [cartBtnState,setCartBtnState] = useState("btn btn-md btn-danger");
-    const [cartText,setCartText] = useState("Add to cart");
+    const [cartBtnState,setCartBtnState] = useState(()=>{
+        const storedStyleRaw = localStorage.getItem(`mobBtnStyle-${props.index}`)
+        const storedStyleJson = storedStyleRaw ? JSON.parse(storedStyleRaw) : "btn btn-primary btn-danger btn-md"
+        return storedStyleJson
+      });
+    const [cartText,setCartText] = useState(()=>{
+        const storedRaw = localStorage.getItem(`mobBtnText-${props.index}`)
+        const btnText = storedRaw ? JSON.parse(storedRaw) : "Add to cart"
+        return btnText
+      })
     const cartBtn = ()=>{
           props.cartItems(props.d.name)
-        setCartBtnState("btn btn-md btn-secondary btn-disabled");
-        setCartText("Added to cart");
+          setCartBtnState(()=>{
+            const storedStyle = "btn btn-disabled btn-secondary btn-md"
+            localStorage.setItem(`mobBtnStyle-${props.index}`,JSON.stringify(storedStyle))
+            return storedStyle
+          })
+        setCartText(()=>{
+            const storedText = "Added to cart"
+            localStorage.setItem(`mobBtnText-${props.index}`,JSON.stringify(storedText))
+            return storedText
+          })
     }
     const truncate = (description,length)=>{
         if(description && description.length>=length)return description.substring(0,length) + "...";
@@ -47,15 +64,12 @@ return(
     <div className='container-sm'>
         <div className='row'>
         {data?data.map((d,i)=>(
-        <CardItem key={i} d={d} cartItemsArray={cartItemsArray} cartItems={cartItems}/>
+        <CardItem index={i} d={d} cartItemsArray={cartItemsArray} cartItems={cartItems}/>
     )):"Oops...No data found"}
         </div>
     </div>
-    <div className='d-flex justify-content-between mx-5 pt-5 pb-3'>
-        <button className='btn btn-primary btn-md'>Previous</button>
-        <button className='btn btn-primary btn-md'>More</button>
-    </div>
    </div>
+   <ImportedFooter/>
    </div>
 )}
 export default Laptops
