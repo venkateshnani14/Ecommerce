@@ -11,7 +11,7 @@ export const CardItem = (props)=>{
         const storedStyleRaw = localStorage.getItem(`mobBtnStyle-${props.index}`)
         const storedStyleJson = storedStyleRaw ? JSON.parse(storedStyleRaw) : "btn btn-primary btn-danger btn-md"
         return storedStyleJson
-      })
+      });
     const [cartText,setCartText] = useState(()=>{
         const storedRaw = localStorage.getItem(`mobBtnText-${props.index}`)
         const btnText = storedRaw ? JSON.parse(storedRaw) : "Add to cart"
