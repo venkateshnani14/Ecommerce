@@ -23,7 +23,7 @@ export const CardItem = (props)=>{
             const storedStyle = "btn btn-disabled btn-secondary btn-md"
             localStorage.setItem(`mobBtnStyle-${props.index}`,JSON.stringify(storedStyle))
             return storedStyle
-          })
+          });
         setCartText(()=>{
             const storedText = "Added to cart"
             localStorage.setItem(`mobBtnText-${props.index}`,JSON.stringify(storedText))
