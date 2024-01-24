@@ -1,19 +1,20 @@
-import {React,useState} from 'react'
+import {React,useState,useEffect} from 'react'
 import Navbar from './Navbar'
 import {Footer as ImportedFooter} from './Headphones'
 import { useNavigate } from 'react-router'
+import { gsap } from "gsap"
 import {ShoppingCartOutlined} from '@ant-design/icons'
 
 export const CardItem = (props)=>{
     console.log(props.cartItemsArray)
     let nav  = useNavigate();
     const [cartBtnState,setCartBtnState] = useState(()=>{
-        const storedStyleRaw = localStorage.getItem(`mobBtnStyle-${props.index}`)
+        const storedStyleRaw = sessionStorage.getItem(`mobBtnStyle-${props.index}`)
         const storedStyleJson = storedStyleRaw ? JSON.parse(storedStyleRaw) : "btn btn-primary btn-danger btn-md"
         return storedStyleJson
       });
     const [cartText,setCartText] = useState(()=>{
-        const storedRaw = localStorage.getItem(`mobBtnText-${props.index}`)
+        const storedRaw = sessionStorage.getItem(`mobBtnText-${props.index}`)
         const btnText = storedRaw ? JSON.parse(storedRaw) : "Add to cart"
         return btnText
       })
@@ -21,12 +22,12 @@ export const CardItem = (props)=>{
           props.cartItems(props.d.name)
           setCartBtnState(()=>{
             const storedStyle = "btn btn-disabled btn-secondary btn-md"
-            localStorage.setItem(`mobBtnStyle-${props.index}`,JSON.stringify(storedStyle))
+            sessionStorage.setItem(`mobBtnStyle-${props.index}`,JSON.stringify(storedStyle))
             return storedStyle
           });
         setCartText(()=>{
             const storedText = "Added to cart"
-            localStorage.setItem(`mobBtnText-${props.index}`,JSON.stringify(storedText))
+            sessionStorage.setItem(`mobBtnText-${props.index}`,JSON.stringify(storedText))
             return storedText
           })
     }
@@ -40,7 +41,7 @@ export const CardItem = (props)=>{
     <img id="laptopImg" src={props.d.img} className="card-img-top" alt="..." style={{maxWidth:"28rem"}} />
     <div className="card-body">
     <hr/>
-    <p className='font-weight-bold text-dark' style={{fontSize:"30px"}}><p className='text-danger d-inline font-weight-light' style={{fontsize:"15px"}}>-33%  </p><sup className='d-inline font-weight-light text-dark'>₹</sup>{props.d.price}</p>
+    <p className='font-weight-bold text-dark' style={{fontSize:"30px"}}><p className='text-danger d-inline font-weight-light' style={{fontsize:"15px"}}>{props.d.discount}  </p><sup className='d-inline font-weight-light text-dark'>₹</sup>{props.d.price}</p>
       <h5 className="card-title">{truncate(props.d.title,125)}</h5>
       <p className="card-text text-secondary">{truncate(props.d.description,200)}</p>
       <div className='d-flex justify-content-between'>
@@ -54,6 +55,10 @@ export const CardItem = (props)=>{
 }
 
 const Laptops = ({data,cartItems,cartItemsArray}) => {
+  useEffect(()=>{
+    gsap.fromTo("#laptopHead_lg",{opacity:0,y:100},{y:0,opacity:1,duration:1.5,ease:"power1"})
+    gsap.fromTo("#laptopCouponDescription",{opacity:0,y:100},{y:0,opacity:1,duration:1.5,ease:"power1"})
+  },[])
 return(
    <div>
     <div style={{background:"whitesmoke"}}>

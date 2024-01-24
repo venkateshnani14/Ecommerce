@@ -1,0 +1,2 @@
+var Bose=Bose||{};Bose.TextImage=function(){function a(){b()}function b(){$jq(c.textContainer).each(function(){var a=$jq(this),b=a.closest(c.container).data("trackingInfo");a.find("a").eq(0).attr({"data-tracking-event":"button-click","data-tracking-info":JSON.stringify(b)})})}var c={container:".bose-textImage",textContainer:".bose-textImage__text"};return{init:a,_selectors:c}}();
+$jq(document).ready(function(){Bose.TextImage.init()});

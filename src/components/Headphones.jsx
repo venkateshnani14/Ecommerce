@@ -50,13 +50,13 @@ export const Footer = ()=>{
 export const ComponentHeadphones = (props)=>{
     const nav = useNavigate();
   const [cartBtnState,setCartBtnState] = useState(()=>{
-    const storedStyleRaw = localStorage.getItem(`btnStyle-${props.index}`)
+    const storedStyleRaw = sessionStorage.getItem(`btnStyle-${props.index}`)
     const storedStyleJson = storedStyleRaw ? JSON.parse(storedStyleRaw) : "btn btn-md btn-success"
     return storedStyleJson;
 
   })
               const [cartText,setCartText] = useState(()=>{
-               const prevStoredTextRaw = localStorage.getItem(`btnText-${props.index}`)
+               const prevStoredTextRaw = sessionStorage.getItem(`btnText-${props.index}`)
                const textJson = prevStoredTextRaw ? JSON.parse(prevStoredTextRaw) : "Add to cart"
                return textJson
               });
@@ -66,12 +66,12 @@ export const ComponentHeadphones = (props)=>{
                 }
                 setCartBtnState(()=>{
                  const newStyle = "btn btn-md btn-secondary btn-disabled"
-                 localStorage.setItem(`btnStyle-${props.index}`,JSON.stringify(newStyle))
+                 sessionStorage.setItem(`btnStyle-${props.index}`,JSON.stringify(newStyle))
                  return newStyle 
                 });
                 setCartText(()=>{
                   const newState = "Added to cart"
-                  localStorage.setItem(`btnText-${props.index}`,JSON.stringify(newState))
+                  sessionStorage.setItem(`btnText-${props.index}`,JSON.stringify(newState))
                   return newState
                 });
             }
@@ -83,11 +83,11 @@ export const ComponentHeadphones = (props)=>{
   return(
 <div className='container col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center' key={props.index}>
         <div id="cardShadow" className="card shadow" style={{maxWidth:"25rem",margin:"0 3% 0 3%"}}>
-        <img src={props.d.img} id="mobImg" className="card-img-top" alt="unavailable" style={{padding:"10px",maxWidth:"28rem"}} height="300px" onClick={()=>{nav(`/buy-now/${props.d.type}/${props.d.name}`)}}/>
+        <img src={props.d.img} id="headphoneImg" className="card-img-top" alt="unavailable" style={{padding:"10px",maxWidth:"28rem"}} height="300px" onClick={()=>{nav(`/buy-now/${props.d.type}/${props.d.name}`)}}/>
         <div className="card-body">
         <hr/>
         <p className = 'font-weight-bold text-dark' style={{fontSize:"30px"}}>
-          <p className = 'text-danger d-inline font-weight-light mr-2' style={{fontsize:"15px"}}>-{props.d.discount}</p>
+          <p className = 'text-danger d-inline font-weight-light mr-2' style={{fontsize:"15px"}}>{props.d.discount}</p>
           <sup className = 'd-inline font-weight-light text-dark'>₹</sup>{props.d.price}
         </p>
           <h5 className = "card-title">{truncate(props.d.title,50)}</h5>
@@ -106,7 +106,7 @@ const Headphones = ({data,cartItems,cartItemsArray}) => {
     gsap.fromTo(".imgTextDiv",{opacity:0,y:100},{y:0,opacity:1,duration:1.5,ease:"power1"})
   },[location.pathname])
   const [textState,setTextState] = useState(()=>{
-    const prevStored = localStorage.getItem('ClickMemory')
+    const prevStored = sessionStorage.getItem('ClickMemory')
     if(prevStored)return prevStored
     else return "click me"
   })
@@ -119,7 +119,7 @@ const Headphones = ({data,cartItems,cartItemsArray}) => {
       <div className="pl-5 pt-5">
       <p style={{fontWeight:"bolder"}} className="text-white display-4">TRUE WIRELESS</p>
         <h2 className="text-white fw-bold">BLUETOOTH® EARBUDS</h2>
-        <p className="text-white fw-bold text-lg"  style={{letterSpacing:"2px"}}>Discover the best wireless earbuds from the experts at getting big sound from small things.</p>
+        <p className="text-white fw-bold text-lg"  style={{letterSpacing:"2px"}}>The soul of headphones is merely the audio. We stand on our promises in delivering the best audio quality out there. </p>
       </div>
       </div>
       </div>
@@ -137,7 +137,7 @@ const Headphones = ({data,cartItems,cartItemsArray}) => {
     )):"Sorry..."}
         </div>
         <div className="container mb-5 pb-5">
-        <h2 id="boseText" className="mb-5 display-4" style={{letterSpacing:"10px",textAlign:"center",fontWeight:"normal"}}>Know your listening style</h2>
+        <h2 id="boseText" className="display-4" style={{letterSpacing:"10px",textAlign:"center",fontWeight:"normal",margin:"0px 0px 5% 0px"}}>Know your listening style</h2>
       <img src="../img/banners/newbose.jpeg" height="100%" width="100%" alt="nothing" />
         </div>
         <Footer />

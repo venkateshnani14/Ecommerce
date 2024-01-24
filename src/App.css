@@ -61,7 +61,7 @@ li{
   border-radius: 25%;
 }
 /* Mobiles */
-@media(max-width:600px){#laptopImg{height:200px}
+@media(max-width:600px){#laptopImg{height:200px;transition: transform 0.5s ease;}
 #laptopHead_lg{display:none}
 #slideshowDiv{height: 200px;background-size: contain}
 #cardShadow{width:150%}
@@ -77,8 +77,8 @@ li{
   }  */
 /* Small laptops */
 @media(min-width:601px) and (max-width:800px){
-  #buyItem{width: 60%}
-  #laptopImg{height:300px}
+  #buyItem{width:60%}
+  #laptopImg{height:300px;transition: transform 0.5s ease;}
   #laptopHead_sm{display:none}
   #slideshowDiv{height: 600px;background-size: cover;}
   #slideshowParent{height: 600px;}
@@ -86,23 +86,23 @@ li{
 /* Desktops */
 @media(min-width:801px){
   #buyItem{width: 50%}
-  #laptopImg{height:400px}
+  #laptopImg{height:400px;transition: transform 0.5s ease;}
   #laptopHead_sm{display:none}
   #slideshowDiv{height: 730px;background-size: cover;}
   #slideshowParent{height: 730px;}
 }
-#buyDiv{overflow-x: hidden;}
+#buyDiv{overflow-x: hidden;background-color: whitesmoke;}
 #maindiv div h5,h1{overflow-y: hidden;}
 #laptopCouponCode{font-size:120%}
 #slideshowDiv{background-repeat: no-repeat;}
 .bg-beige {background-color: rgb(188, 188, 142);}
-#mobileImg{min-height: 400px;max-height: 400px;}
+#mobileImg{min-height: 400px;max-height: 400px;transition: transform 0.4s ease;}
 #mobileDivChild{min-height: 720px;width:100%}
 #mainMobileDiv{overflow-x:hidden}
 #beautyItem:hover{border-bottom: white}
 .ant-menu-item:hover {border-bottom: 2px solid 	#52bce6;}
 .ant-menu-submenu{border-bottom:#282c34}
-#cardShadow{width:100%}
+#cardShadow{width:100%;}
 @media(min-width:300px)and(max-width:500px){
   .imgDivStyle{height:50px !important;width:50px !important;}
   .imgTextDiv{display:none}
@@ -110,7 +110,10 @@ li{
 .pitchBlack_whiteText {background-color: black;color: white;}
 #bgStyle{background-image: url(../public/img/banners/bose1.jpeg);background-size: cover;background-position: center;background-repeat: no-repeat;height: 75dvh;}
 .imgTextDiv{width: 450px;height: 350px;margin-left: 15%;padding-top: 7%;opacity: 0;}
-#mobImg:hover{cursor: pointer}
+#headphoneImg{transition: transform 0.5s ease;}
+#headphoneImg:hover{transform: scale(1.1);cursor: pointer;}
+#mobileImg:hover{cursor: pointer;transform: scale(1.1);}
+#laptopImg:hover{cursor: pointer;transform: scale(1.1);transform: scale(1.1);}
 .footer{min-height:80px}
 #footerMain{min-height:400px;width:100%;}
 .footerList li{color:grey;list-style:none;padding:2% 0%;letter-spacing:3px}
@@ -121,3 +124,14 @@ li:hover{color:whitesmoke;cursor:pointer;text-decoration:underline}
 .uniqueFooter:hover{text-decoration:none;color:white;cursor:pointer}
 .h5Footer:hover{color:White;text-decoration:underline;cursor:pointer}
 .batmanLogo:hover{cursor:pointer}
+#cartNumberDiv{width:35px;height: 35px;display: flex;justify-content: center;align-items: center;margin: 0px 50px 0px 0px;}
+#buyItemInfo{max-height: 80vh;max-width: 30vw;margin: 4% 0px;}
+#buyItemDeliveryInfo{max-height: 80vh;max-width: 40vw;border: 2px solid black;margin:4% 0.1% 0px 0px;}
+#buyItemPrice{text-decoration:line-through;}
+#buyItem_saleBtn{width: max-content;background-color: rgb(218, 2, 2);color: white;border-radius: 5%;}
+.buyNowHighlights{color: rgb(19, 155, 179);font-weight: bold;}
+.buyingBtn{display: block;}
+#buyBtnOne{color: black;background-color:rgb(235, 235, 39);}
+#buyBtnOne:hover{background-color:rgb(225, 225, 16) ;}
+#buyBtnTwo{color: black;background-color:rgb(209, 180, 12);}
+#buyBtnTwo:hover{background-color:rgb(187, 159, 3) ;}
