@@ -60,7 +60,7 @@ const Buy = (props) => {
                 <div id="buyItemDeliveryInfo" className='col-sm-12 col-md-6 col-lg-4' style={{overflowY:"hidden"}}>
                 <h4 className='mb-0 pb-0 mt-2' style={{fontSize:"35px"}}><sup>₹</sup>{d.price}</h4>
                 <p><span className='buyNowHighlights'>Free Delivery</span>, order within 30mins and get it in 4 days from the date of order.</p>
-                  <p><FontAwesomeIcon icon="fa-solid fa-location-dot" />Delivering to the Knights residency,phase-6,hitech-city,hyderabad,telangana,500055</p>
+                  <p><FontAwesomeIcon icon="fa-solid fa-location-dot" />Delivering to Knights residency,phase-6,hitech-city,hyderabad,telangana,500055</p>
                   <span className='display-4 display-lg-2 text-success'>In stock</span>
                   <div className='mt-0 pt-4'>
                     <p className='m-0 pd-0'>Shipped from : <span className="buyNowHighlights" >Gotham</span></p>
